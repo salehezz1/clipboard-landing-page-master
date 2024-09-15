@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.clear{
+    clear: both;
+}
+/*I am will chenging width to 1440px*/
+.contener{
+    width: 1240px;
+    margin: auto;
+    
+}
+.header{
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+.header .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.header .info h3{
+    text-align: center;
+    width: 500px;
+    font-size: 20px;
+    color: hsl(210, 10%, 33%);
+
+}
+.header .info p{
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    color: hsl(201, 11%, 66%)
+}
+.header button{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+.header .ios{
+    background-color: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 60%);
+}
+.header .mac{
+    background-color: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 60%);
+}
+@media (max-width:375px) {
+    .header{
+        background-image: url(../images/bg-header-mobile.png);
+        background-size: cover;
+        width: 375px;
+    }
+    .header .info h3{
+        width: 375px;
+    } 
+    .header .info p{
+        width: 375px;
+    }
+    .header .ios{
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .header .mac{
+        display: block;
+        width: 100%;
+    }
+}
+/* start track */
+
+.track .title{
+    position: relative;
+    left: 0;
+    width: 40%;
+}
+.track .title h3{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: hsl(210, 10%, 33%);
+}
+.track .title p{
+    color: hsl(201, 11%, 66%);
+    padding: 10px;
+    text-align: center;
+}
+.track .info{
+    position: relative;
+}
+.track .info .list {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    display: inline;
+    padding-top: 50px;
+}
+.track .info .list h2{
+    margin: 10px 0;
+    font-size: large;
+    color: hsl(210, 10%, 33%);
+
+}
+.track .info .list p{
+    color: hsl(201, 11%, 66%);
+    margin-bottom: 100px;
+}
+@media (max-width:375px){
+    .track{
+        width: 375px;
+    }
+    .track .title {
+        width: 100%;
+    }
+    .track .info img{
+        width: 100%;
+    }
+    .track .info .list {
+        position: static;
+        width: 100%;
+    }
+    .track .info .list h2{
+        text-align: center;
+    }
+    .track .info .list p{
+        text-align: center;
+    }
+}
+/* end track */
+/* start access */
+.access{
+    margin-bottom: 100px;
+}
+.access .title h3{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: hsl(210, 10%, 33%);
+}
+.access .title p{
+    color: hsl(201, 11%, 66%);
+    padding: 10px;
+    text-align: center;
+}
+.access .info img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width:375px){
+    .access{
+        width: 375px;
+    }
+    .access .title{
+        width: 100%;
+    }
+    .access .info{
+        position: static;
+        width: 100%;
+    }
+    .access .info img{
+        position: static;
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+/* end access */
+/* start workflow */
+.workflow{
+    margin-top: 100px;
+}
+.workflow .title h3{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: hsl(210, 10%, 33%);
+}
+.workflow .title p{
+    color: hsl(201, 11%, 66%);
+    padding: 10px;
+    text-align: center;
+}
+.workflow .info .item {
+    float: left;
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 30%;
+}
+.workflow .info .item img{
+    margin: auto;
+    display: block;
+}
+.workflow .info .item h3{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: hsl(210, 10%, 33%);
+}
+.workflow .info .item p{
+    color: hsl(201, 11%, 66%);
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width:375px){
+    .workflow{
+        width: 375px;
+    }
+    .workflow .title{
+        width: 100%;
+    }
+    .workflow .info {
+        width: 100%;
+    }
+    .workflow .info .item {
+        width: 100%;
+    }
+}
+/* end workflow */
+/* start images */
+.images .info .item {
+    float: left;
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 19%;
+}
+@media (max-width:375px){
+    .images{
+        width: 375px;
+    }
+    .images .info{
+        width: 100%;
+    }
+    .images .info .item{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+/*end images */
+/* start download */
+.download {
+    margin-bottom: 240px;
+    margin-top: 100px;
+    position: relative;
+}
+.download .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 500px;
+}
+.download .info h3{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    color: hsl(210, 10%, 33%);
+}
+.download .info p{
+    color: hsl(201, 11%, 66%);
+    padding: 10px;
+    text-align: center;
+    
+}
+.download .info button{
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+.download .ios{
+    background-color: hsl(171, 66%, 44%);
+    border: 1px solid hsl(171, 66%, 60%);
+}
+.download .mac{
+    background-color: hsl(233, 100%, 69%);
+    border: 1px solid hsl(233, 100%, 60%);
+}
+@media (max-width:375px){
+    .download{
+        width: 374px;
+    }
+    .download .info {
+        position: static;
+        width: 100%;
+        transform: translate(0, 0);
+    }
+    .download .info h3{
+        text-align: center;
+    }
+    .download .info p{
+        text-align: center;
+    }
+    .download .ios , .download .mac{
+        position: static;
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/* end download */
+/* start footer */
+.foot{
+    background-color: hsl(201, 11%, 90%);
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+}
+.foot .logo{
+    width: 200px;
+    float: left;
+}
+.foot  .info{
+    display: inline-block;
+    margin-left: 100px;
+    height: 100%;
+    width: 400px;
+}
+.foot .info span{
+    display: inline-block;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.foot .icon{
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.foot .icon img {
+    margin-left: 20px;
+}
+@media (max-width:375px){
+    .contener{
+        width: 375px;
+    }
+    .foot{
+        width: 375px;
+        height: auto;
+        overflow: visible;
+        position: static;
+        margin: auto;
+    }
+    .foot .logo{
+        width: 375px;
+        float: none;
+        text-align: center;
+    }
+    .foot .info{
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .foot .info span{
+        display: block;
+        margin: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .foot .icon {
+        position: relative;
+        transform: translateY(0);
+        width: 50%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* end footer */
+
